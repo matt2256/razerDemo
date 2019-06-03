@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>EX16Obejcts_projekt</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CarHandler">
+      <HintPath>..\..\..\..\Downloads\CarHandler\CarHandler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

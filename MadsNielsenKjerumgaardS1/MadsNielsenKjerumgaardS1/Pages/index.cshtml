@@ -1,0 +1,31 @@
+﻿@page
+@{
+    DateTime time = DateTime.Now;
+    Random random = new Random();
+    var names = new List<string> {"mikkel", "makoto", "karoline", "maria", "linus", "mads" };
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Det er i dag d. @time.ToLongDateString() og klokken er @time.ToShortTimeString() </p>
+    
+    @for (int i = 0; i < random.Next(1,7); i++)
+    {
+        <img src = "/img/565279.png" />
+    }
+    
+    <ul>
+        @for (int i = 0; i < names.Count; i++)
+        {
+            <li>@names[i]</li>
+        }
+    </ul>
+
+
+</body>
+</html>
